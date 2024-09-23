@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Cure+ - Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Para garantir que o footer fique na parte inferior */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #c0392b; /* Vermelho */
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            margin-right: 20px; /* Espaço entre a logo e os outros elementos */
+        }
+        .logo img {
+            width: 180px; /* Aumentando o tamanho da logo */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column; /* Colocando subtítulo e mensagem em coluna */
+        }
+        .welcome {
+            font-size: 24px; /* Tamanho da mensagem de boas-vindas */
+            margin: 0; /* Removendo margem */
+        }
+        .subtitle {
+            font-size: 18px; /* Tamanho do subtítulo */
+            margin: 5px 0; /* Espaço abaixo do subtítulo */
+        }
+        .search-container {
+            display: flex;
+            width: 100%;
+            max-width: 600px; /* Largura máxima da barra de pesquisa */
+            margin-top: 10px; /* Espaço acima da barra de pesquisa */
+        }
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px;
+            background-color: #007BFF; /* Azul para o botão de pesquisa */
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #0056b3; /* Azul escuro ao passar o mouse */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            flex-grow: 1; /* Para ocupar o espaço restante da tela */
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .btn {
+            text-decoration: none;
+            background-color: #c0392b; /* Vermelho */
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #a93226; /* Vermelho escuro */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Untitled_logo_1_free-file.jpg" alt="Logo da Farmácia">
+        </div>
+        <div class="header-content">
+            <p class="welcome">Bem-vindo à Farmácia Cure+</p>
+            <p class="subtitle">Encontre medicamentos e produtos de saúde aqui.</p>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Pesquisar cliente...">
+                <button class="search-button">Pesquisar</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="button-group">
+            <a href="login.html" class="btn">Login</a>
+            <a href="register.html" class="btn">Cadastrar</a>
+            <a href="novo-cliente.html" class="btn">Criar Novo Cliente</a>
+            <a href="adicionar-medicamento.html" class="btn">Adicionar Medicamentos</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Farmácia Cure+. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
